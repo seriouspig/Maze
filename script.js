@@ -32,3 +32,14 @@ function Game(id, level) {
 
     this.player.el = null;
 }
+
+Game.prototype.populateMap() {
+    this.el.className = 'game-container' + this.theme;
+    let tiles = document.getElementById('tiles')
+    for (var Y=0; y < this.map.length; ++y) {
+        for (var x=0; x < this.map[y].length; ++x) {
+            let.tileCode = this.map[y][x]
+            let tileType = myGame.tileTypes[tileCode]
+        }
+    }
+}
